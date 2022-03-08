@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Life Timeline Visualized</title>
 </head>
 <body>
     
-    <h1>Your Life In <label for="unit" id="unit-label">Weeks</label></h1>
+    <h1>Your Life Timeline Visualized</h1>
+    <!-- <h1>Your Life In <label for="unit" id="unit-label">Weeks</label></h1>
     <div class="select-unit"><center>
         <select name="unit" class="unit" id="unit" required oninput="updateUnit();">
             <option value="Years">Years</option>
@@ -17,7 +18,7 @@
             <option value="Weeks" selected>Weeks</option>
             <option value="Days">Days</option>
         </select></center>
-    </div>
+    </div> -->
     
     <div class="birthday">
         <h3>Enter your Date of Birth</h3>
@@ -36,7 +37,9 @@
             <option value="December">December</option>
         </select>
         <input type="text" class="day" id="day" pattern="\d{0,2}" required oninput="updateDate();" placeholder="31">
-        <input type="text" class="year" id="year" pattern="\d{4}" required oninput="updateDate();" placeholder="2000">
+        <input type="text" class="year" id="year" pattern="\d{4}" required oninput="updateDate();" placeholder="2000"><br /><br />
+        <label>Life Expectency:</label>
+        <input type="text" class="expect" id="expect" pattern="\d{4}" required oninput="updateDate();" placeholder="Life Expectency (Years)" value="90">
     </div><br />
     
     <div class="canvas" width="500px" height="800px">
