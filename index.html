@@ -21,9 +21,25 @@
     
     <div class="birthday">
         <h3>Enter your Date of Birth</h3>
-    </div>
+        <select name="month" id="month" required oninput="updateDate();">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <input type="text" class="day" id="day" pattern="\d{0,2}" required oninput="updateDate();" placeholder="31">
+        <input type="text" class="year" id="year" pattern="\d{4}" required oninput="updateDate();" placeholder="2000">
+    </div><br />
     
-    <div class="canvas">
+    <div class="canvas" width="500px" height="800px">
         <canvas id="canvas" width="500px" height="800px">
         </canvas>
     </div>

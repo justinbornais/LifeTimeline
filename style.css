@@ -4,9 +4,19 @@ h1 {
 
 #unit-label {
     display: inline;
+    text-align: center;
 }
 
 .birthday {
     margin: 0 auto 0 auto;
     width:250px;
+}
+
+.day { width: 3em; }
+.year { width: 4em; }
+.canvas {
+    border: 2px solid black;
+    margin: 0 auto 0 auto;
+    width: 500px;
+    height: 800px;
 }
