@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+#unit-label {
+    display: inline;
+}
+
+.birthday {
+    margin: 0 auto 0 auto;
+    width:250px;
+}

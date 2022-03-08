@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Your Life In <label for="unit" id="unit-label">Weeks</label></h1>
+    <div class="select-unit"><center>
+        <select name="unit" class="unit" id="unit" required oninput="updateUnit();">
+            <option value="Years">Years</option>
+            <option value="Months">Months</option>
+            <option value="Weeks" selected>Weeks</option>
+            <option value="Days">Days</option>
+        </select></center>
+    </div>
+    
+    <div class="birthday">
+        <h3>Enter your Date of Birth</h3>
+    </div>
+    
+    <div class="canvas">
+        <canvas id="canvas" width="500px" height="800px">
+        </canvas>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
